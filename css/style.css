@@ -3,11 +3,9 @@
 	margin: 0 auto;
 }
 body {
+	font: 600 14px Arial, sans-serif;
 	background: #F1F1F1;
-	font-family: Arial, sans-serif;
 	color: #c2c2c2;
-	font-weight: 600;
-	font-size: 14px;
 }
 .ba-header {
 	margin: 60px 0 50px;
@@ -16,16 +14,16 @@ body {
 	margin-bottom: 100px;
 }
 
-input[type="search"] {
+.ba-search {
 	background: #F1F1F1;
 	font-size: 110px;
 	font-weight: bold;
-	max-width: 88%;
+	max-width: 90%;
 	border: none;
 	outline: none;
 	color: #ec5a62;
 }
-input[type="submit"] {
+.ba-search-submit {
 	width: 80px;
 	height: 80px;
 	background: url(../img/magnifier.svg) no-repeat center center;
@@ -47,7 +45,10 @@ h3 {
 .ba-people, .ba-popular, .ba-recent {
 	display: inline-block;
 	font-size: 0px;
-	width: 33%;
+	width: 30%;
+}
+.ba-popular {
+	margin: 0 49px;
 }
 
 .ba-content ul {
@@ -60,30 +61,32 @@ h3 {
 	display: block;
 }
 .ba-content a:hover {
-	text-decoration: none;
 	color: #ec5a62;
 	background: rgba(118,117,128,0.1);
 	border-radius: 6px;
 }
 .ba-content li {
 	border: 1px solid #F1F1F1;
-	width: 95%;
 	border-radius: 6px;
 	margin-bottom: 2px;
 	background: rgba(118,117,128,0.05);
 }
 
+.ba-people-list img {
+	border-radius: 50px;
+}
+
 .ba-content img {
-	border-radius: 100px;
+	display: inline-block;
+	vertical-align: middle;
 	margin: 10px;
 }
 .ba-content span {
 	font-size: 14px;
-	position: relative;
-	bottom: 28px;
-	left: 10px;
 	display: inline-block;
-	width: 70%;
+	vertical-align: middle;
+	padding: 5px;
+	width: 75%;
 }
 
 
